@@ -1,0 +1,158 @@
+// Created     : 2023-09-1 10:29:57
+// DLL id      : C:\Program Files (x86)\Common Files\DHI\MIKEZero\pfs2004.dll
+// PFS version : Jun 18 2007 20:22:02
+
+[FEM_RESULT_VIEWER]
+   [FEM_DATA]
+      FILE_NAME = |.\Purnama.dfsu|
+   EndSect  // FEM_DATA
+
+   [IMAGE_FILES]
+      ImageFileName = 0, |..\..\..\ECW\ecw1.bmp|
+      AxisUnit = 0
+      [PROPERTIES]
+         Display = true
+         x0 = 123.02798151965
+         y0 = -0.912938555449996
+         x1 = 123.17631030415
+         y1 = -0.790014266949996
+         Longitude = 123.02798151965
+         Latitude = -0.912938555449996
+         PixelWidth = 2.14565e-005
+         PixelHeight = 2.14565e-005
+         DisplayStyle = 1
+         StretchMode = 4
+         TransparentColor = 255, 255, 255
+         Transparency = 0.5
+         OverlayDrawingOrder = 2
+      EndSect  // PROPERTIES
+
+      ImageFileName = 1, |..\..\..\SHP\Lokasi Kegiatan\Lokasi Kegiatan GWS.shp|, 'Id'
+      AxisUnit = 1000
+      [PROPERTIES]
+         [MIKEZero_Shape_Polygon_Object]
+            Base_Title = 'Shape Polygons'
+            Base_Reg_Key = ''
+            Base_Col_Red = 255
+            Base_Col_Green = 255
+            Base_Col_Blue = 255
+            Base_Display_On = true
+            Line_Thickness = 0.2
+            Line_Style = 0
+            Line_Polygon_Style = 3
+            Draw_Text = false
+            Text_Color_Style = 0
+            Text_Color = 0, 0, 0
+            Text_Bk_Mode = 1
+         EndSect  // MIKEZero_Shape_Polygon_Object
+
+         Display = true
+         ConversionType = 1
+         ProjectionType = 'LONG/LAT'
+         OverlayDrawingOrder = 7
+      EndSect  // PROPERTIES
+
+   EndSect  // IMAGE_FILES
+
+   [FEM_RESULT_VIEWER_VIEW]
+      TYPE = 'CFemResultViewerView'
+      [HORIZONTAL_SPECIFIC]
+         [DATA]
+         EndSect  // DATA
+
+      EndSect  // HORIZONTAL_SPECIFIC
+
+      [COMMON_PARAMETERS]
+         [DATA]
+            Time_Step = 66
+            Stepsize_Time = 1
+            Contour_Item = 4
+            Animation_Start_Time = 2023, 8, 16, 0, 0, 0
+            Animation_End_Time = 2023, 8, 20, 4, 0, 0
+            Animation_Time_Step = 3600
+            Animation_Time_Step_Unit = 1400
+            Animation_Num_Time_Steps = 101
+            Animation_Current_Time_Step = 66
+         EndSect  // DATA
+
+         [CHART]
+            Title = 'Data File: Purnama.dfsu'
+            Title_On = 0
+            Zoom_x0 = 123.0501507065995
+            Zoom_y0 = -0.9109607542342013
+            Zoom_x1 = 123.1560173467092
+            Zoom_y1 = -0.8234941393136979
+         EndSect  // CHART
+
+         [FEM_MESH_OVERLAY]
+            View_Shading_Type = 2
+            View_Shading_Color_Type = 1
+            View_Box_Transparency_Val = 0.5
+            View_Isoline = 0
+            Element_Mesh_On = 0
+            Borders_On = 0
+            White_Background = 0
+            Dried_Land_As_Background = 0
+         EndSect  // FEM_MESH_OVERLAY
+
+         [VECTOR_OVERLAY]
+            Vectors_On = 1
+            X_Item = 2
+            Y_Item = 3
+            Z_Item = 0
+            Vector_Mode = 2
+            Vector_GridX = 200
+            Vector_GridY = 200
+            Ref_Vector_On = 0
+            Ref_Vector_Text = ''
+            Ref_Vector_X_Length = 1
+            Ref_Vector_Y_Length = 1
+            Automatic_Vector_Scaling = 1
+            Max_Vector_X_Length = 0.003284171855815002
+            Max_Vector_Y_Length = 0.003284171855815002
+            Vector_Scale_X = 0.001164647838806152
+            Vector_Scale_Y = 0.001164647838806152
+            Vector_Thickness = 0.1500000059604645
+            Use_Length_Limit = 1
+            Length_Limit = 10
+         EndSect  // VECTOR_OVERLAY
+
+         [COLOR_LEGEND_OVERLAY]
+            Color_Legend_On = 1
+            [MIKEZero_Palette_Definition]
+               Palette_Title = 'Current speed [m/s]'
+               Palette_Type = 0
+               Locked = false
+               Topmost_Value = false
+               Nice_Value = true
+               RGB_Delete_Color = 220, 220, 220
+               RGB_Color_Value = 128, 0, 128
+               RGB_Color_Value = 85, 0, 171
+               RGB_Color_Value = 42, 0, 213
+               RGB_Color_Value = 0, 0, 255
+               RGB_Color_Value = 0, 56, 225
+               RGB_Color_Value = 0, 111, 195
+               RGB_Color_Value = 0, 166, 166
+               RGB_Color_Value = 0, 196, 110
+               RGB_Color_Value = 0, 226, 55
+               RGB_Color_Value = 0, 255, 0
+               RGB_Color_Value = 85, 255, 0
+               RGB_Color_Value = 170, 255, 0
+               RGB_Color_Value = 255, 255, 0
+               RGB_Color_Value = 255, 170, 0
+               RGB_Color_Value = 255, 85, 0
+               RGB_Color_Value = 255, 0, 0
+            EndSect  // MIKEZero_Palette_Definition
+
+         EndSect  // COLOR_LEGEND_OVERLAY
+
+         [OVERLAY_SETTINGS]
+            Overlay_Drawing_Order = 3, 6, 4, 5, 0, 1
+         EndSect  // OVERLAY_SETTINGS
+
+      EndSect  // COMMON_PARAMETERS
+
+   EndSect  // FEM_RESULT_VIEWER_VIEW
+
+EndSect  // FEM_RESULT_VIEWER
+
